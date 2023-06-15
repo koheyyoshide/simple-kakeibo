@@ -1,6 +1,7 @@
 <?php
 
 include_once('./dbconnect.php');
+include_once('./functions.php');
 
 //選択されたIDを取得
 $id = $_GET['id'];
@@ -61,7 +62,7 @@ $record = $stmt->fetch();
       </div>
       <div class="form-group">
         <div class="form-check form-check-inline">
-          <input class="form-check-input" type="radio" name="type" id="income">
+          <input class="form-check-input" type="radio" name="type" id="income" checked>
           <label class="form-check-label" for="income">収入</label>
         </div>
         <div class="form-check form-check-inline">
